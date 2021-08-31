@@ -1,0 +1,264 @@
+:root{
+    --main-color: #0c0e10;
+    --whiteP: #e6e6e7;
+    --whiteS: #6f737d;
+    --pink: #FC3ACD;
+    --blue: #3513F2;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 16px;
+    font-family:'Poppins', sans-serif;;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    background-color: var(--main-color);
+}
+
+
+*,
+*::after,
+*::before {
+ box-sizing: inherit;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    color: var(--whiteS);
+}
+
+body::-webkit-scrollbar {
+    width: 0.5em;
+}
+body::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+}
+body::-webkit-scrollbar-thumb {
+  	
+	background-image: -webkit-linear-gradient(45deg, var(--pink), var(--blue));
+}
+
+
+
+img {
+    margin: auto;
+    display: block;
+    max-width: 100%;
+    height: auto;
+  }
+
+
+
+h1, h2, h3{
+    color: var(--whiteP);
+    margin: 20px 0px;
+}
+
+a{
+    text-decoration: none;
+    color: var(--whiteP);
+}
+
+li{
+    list-style-type: none;
+}
+
+main{
+    width: 100vw;
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr 70% 1fr;
+}
+
+.section{
+    width: 100vw;
+    height: auto;
+    /* background-color: var(--main-color); */
+    grid-column: 2 / 3;
+}
+
+
+/* -------------------------------- Menu ------------------------------------------------- */
+
+.header{
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 100px 1fr;
+}
+
+.menu{
+    /* background-color: plum; */
+    display: grid;
+    grid-template-columns: 60% 40%;
+    padding: 40px 10px;
+}
+
+.menu > ul{
+    display: flex;
+    /* background: #000; */
+    margin-right: 30px;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.menu > ul > li > a {
+    font-size: 15px;
+    transition: all 0.3s ease-in-out;
+}
+
+.menu > ul > li > a:hover {
+    color: var(--whiteS);
+}
+
+.menu > div {
+    /* background-color: #fff; */
+    display: flex;
+    align-items: center;
+    padding: 0 60px;
+}
+
+.menu > div > button {
+    width: 60px;
+    height: 60px;
+    border: none;
+    background: linear-gradient(to right, var(--pink), var(--blue));
+    border-radius: 50px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    color: var(--whiteP);
+    margin-right: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 2s ease;
+    transform: rotate(360deg);
+}
+
+.menu > div > button > div {
+    background-color: var(--main-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+
+/* -------------------------------- Header ------------------------------------------------- */
+
+
+.header-info{
+    /* background-color: pink; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 80px;
+    line-height: 2rem;
+    text-align: center;
+}
+
+.header-info > h2{
+    font-weight: 400;
+}
+
+
+.header-info h1{
+    font-size: 70px;
+}
+
+.header-info > p{
+    margin: 20px 0px;
+    font-size: 20px;
+    padding: 20px;
+    /* font-weight: 500; */
+}
+
+.button{
+    width: 200px;
+    height: 50px;
+    border: 2px solid var(--whiteP);
+    border-radius: 30px;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 0.8px;
+    transition: all 0.5s ease-in-out;
+    color: var(--whiteP);
+    background-size: 200% auto;
+    background-image: linear-gradient(to right, var(--pink) 0%, #cf0ec6  51%, var(--blue)  100%)
+}
+
+.button:hover{
+    background-position: right center;
+}
+
+.video {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	height: auto;
+	width: auto;
+	z-index: -1;
+	transform: translateX(-50%) translateY(-50%);
+	min-width: 100%;
+	min-height: 100%;
+	opacity: 0.8;
+}
+
+.hero-image{
+
+	height: 100vh;
+	width: 100%;
+	position: relative;
+	overflow: hidden;
+	display: flex;
+	justify-content: center;
+	align-items: flex-end;
+    z-index: 9;
+}
+
+
+.header-gradient{
+	background-image: linear-gradient(to bottom, transparent, var(--main-color));
+    /* background-color: #fff; */
+    position: absolute;
+    bottom: -10px;
+	width: 100vw;
+	height: 40%;
+    z-index: -1;
+}
+
+/* ---------------------------------- SECCIONES ------------------------------------------ */
+
+
+.about, .work{
+    width: 100%;
+    min-height: auto;
+    padding: 20px 10px;
+    padding: 2rem;
+}
+
+
+.h1-s{
+    font-size: 30px;
+}
+
+.p-s{
+    padding: 0 100px 0px 20px;
+    margin-bottom: 50px;
+}
+
+.a-s{
+    color: var(--pink);
+    transition: all 0.3s ease-in-out;
+}
+
+.a-s:hover{
+    color: #b4168d;
+}
+
+/* --- EXPERIENCIA ---*/
+
+
