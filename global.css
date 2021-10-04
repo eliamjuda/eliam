@@ -48,7 +48,9 @@ img {
     height: auto;
   }
 
-
+button{
+    cursor: pointer;
+}
 
 h1, h2, h3{
     color: var(--whiteP);
@@ -194,18 +196,6 @@ main{
     background-position: right center;
 }
 
-.video {
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	height: auto;
-	width: auto;
-	z-index: -1;
-	transform: translateX(-50%) translateY(-50%);
-	min-width: 100%;
-	min-height: 100%;
-	opacity: 0.8;
-}
 
 .hero-image{
 
@@ -233,10 +223,9 @@ main{
 /* ---------------------------------- SECCIONES ------------------------------------------ */
 
 
-.about, .work{
+.about, .work, .contacto, footer{
     width: 100%;
     min-height: auto;
-    padding: 20px 10px;
     padding: 2rem;
 }
 
@@ -261,4 +250,85 @@ main{
 
 /* --- EXPERIENCIA ---*/
 
+.work_wrapper{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    gap: 4rem;
+    margin-top: 6rem;
+}
 
+.work-box{
+    padding: 2rem;
+    height: 25rem;
+    background-color: var(--whiteS);
+    /* background: linear-gradient(180deg,#0A5297,#3389DC); */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+}
+
+.work-box_link{
+    align-self: flex-end;
+    width: 15%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.work-box:nth-child(4){
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+h3{
+    font-size: 35px;
+    margin: 10px 40px;
+}
+
+h5{
+    margin: 0px 20px 0px 50px;
+    color: black;
+    
+}
+
+.practipuma{
+    background: linear-gradient(180deg,#0A5297,#3389DC);
+}
+.innovalab{
+    background: linear-gradient(180deg,#299E09,#185906);
+}
+.impasse{
+    background: linear-gradient(180deg,#9A28BB,#460659);
+}
+
+.contact-box > h5{
+    font-size: 16px;
+    color: var(--whiteS);;
+}
+
+.contact-box > a{
+    font-size: 18px;
+    margin: 0px 50px;
+    font-weight: 500;
+    transition: all ease-in-out 0.3s;
+}
+
+.contact-box > a:hover{
+    color:#9A28BB;
+}
+
+.contact{
+    margin: 80px 0px;
+}
+
+footer{
+    padding: 2rem;
+}
+
+footer > h5{
+    color: var(--whiteS);
+    margin: 0;
+    font-weight: 400;
+}
