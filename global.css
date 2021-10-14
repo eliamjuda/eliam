@@ -376,87 +376,90 @@ footer > h5{
 
 /* --- EXPERIENCIA ---*/
 
-.work_wrapper{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
-    gap: 4rem;
-    margin-top: 6rem;
-}
+    .work_wrapper{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(17rem, 1fr));
+        gap: 3rem;
+        margin-top: 6rem;
+        justify-content: center;
+    }
 
-.work-box{
-    padding: 2rem;
-    height: 25rem;
-    background-color: var(--whiteS);
-    /* background: linear-gradient(180deg,#0A5297,#3389DC); */
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    position: relative;
-}
+    .work-box{
+        padding: 2rem;
+        height: 20rem;
+        background-color: var(--whiteS);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+    }
 
-.work-box_link{
-    align-self: flex-end;
-    width: 15%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
+    .work-box_link{
+        align-self: flex-end;
+        width: 15%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
 
-.work-box:nth-child(4){
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-}
+    .work-box:nth-child(4){
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
 
-h3{
-    font-size: 35px;
-    margin: 10px 40px;
-}
+    h3{
+        font-size: 35px;
+        margin: 10px 40px;
+    }
 
-h5{
-    margin: 0px 20px 0px 50px;
-    color: black;
-    
-}
+    h5{
+        margin: 0px 20px 0px 50px;
+        color: black;
+        
+    }
 
-.practipuma{
-    background: linear-gradient(180deg,#0A5297,#3389DC);
-}
-.innovalab{
-    background: linear-gradient(180deg,#299E09,#185906);
-}
-.impasse{
-    background: linear-gradient(180deg,#9A28BB,#460659);
-}
+    .practipuma{
+        background: linear-gradient(180deg,#0A5297,#3389DC);
+    }
+    .innovalab{
+        background: linear-gradient(180deg,#299E09,#185906);
+    }
+    .impasse{
+        background: linear-gradient(180deg,#9A28BB,#460659);
+    }
 
-.contact-box > h5{
-    font-size: 16px;
-    color: var(--whiteS);;
-}
+    .contact-box > h5{
+        font-size: 16px;
+        color: var(--whiteS);;
+        margin: 0px 50px;
+    }
 
-.contact-box > a{
-    font-size: 18px;
-    margin: 0px 50px;
-    font-weight: 500;
-    transition: all ease-in-out 0.3s;
-}
 
-.contact-box > a:hover{
-    color:#9A28BB;
-}
+    .contact-box > a{
+        font-size: 18px;
+        margin: 0px 50px;
+        font-weight: 500;
+        transition: all ease-in-out 0.3s;
+    }
 
-.contact{
-    margin: 80px 0px;
-}
+    .contact-box > a:hover{
+        color:#9A28BB;
+    }
 
-footer{
-    padding: 2rem;
-}
+    .contact{
+        margin: 80px 0px;
+    }
 
-footer > h5{
-    color: var(--whiteS);
-    margin: 0;
-    font-weight: 400;
-}
+    footer{
+        padding: 2rem;
+    }
+
+    footer > h5{
+        color: var(--whiteS);
+        margin: 0;
+        font-weight: 400;
+    }
 
 }
