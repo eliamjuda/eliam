@@ -296,6 +296,7 @@ h5{
 .practipuma{
     background: linear-gradient(180deg,#0A5297,#3389DC);
 }
+
 .innovalab{
     background: linear-gradient(180deg,#299E09,#185906);
 }
@@ -325,6 +326,9 @@ h5{
 
 footer{
     padding: 2rem;
+    text-align: center;
+    width: 1000px;
+    grid-column: 2 / 3;
 }
 
 footer > h5{
